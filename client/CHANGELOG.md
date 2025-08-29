@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/n0rq1/release-please-monorepo/compare/client/v0.2.1...client/v0.3.0) (2025-08-29)
+
+
+### Features
+
+* **chore:** this updates a bunch of stuff ([a66544e](https://github.com/n0rq1/release-please-monorepo/commit/a66544ea5afa5b053184263a66f496beb1e48256))
+
+
+### Bug Fixes
+
+* **client:** removed something ([421a555](https://github.com/n0rq1/release-please-monorepo/commit/421a555580cb1341500e43c18eda1938892dd724))
+
 ## [0.2.1](https://github.com/n0rq1/release-please-monorepo/compare/client/v0.2.0...client/v0.2.1) (2025-08-29)
 
 
