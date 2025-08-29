@@ -1,0 +1,11 @@
+{
+  "name": "monolithic-api",
+  "version": "1.2.0",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.4",
+    "pg": "^8.11.0"
+  }
+}

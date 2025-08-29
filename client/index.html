@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Monolithic Demo</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen flex flex-col bg-gradient-to-br from-green-200 via-blue-200 to-purple-200">
+    <h1>Monolithic App Demo</h1>
+    <div id="root" class="flex-grow flex flex-col items-center justify-center"></div>
+    <script type="text/babel">
+      function App() {
+        const [items, setItems] = React.useState([]);
+        const [loading, setLoading] = React.useState(false);
+        const [timestamp, setTimestamp] = React.useState(null);
+        const [fruit, setFruit] = React.useState(null);
+        const API_BASE = `${window.location.protocol}//${window.location.hostname}:3001`;
+        const loadItems = async () => {
+          setLoading(true);
+          try {
+            const res = await fetch(`${API_BASE}/api/items`);
+            const data = await res.json();
+            setItems(data);
+            if (data.length) {
+              const random = data[Math.floor(Math.random() * data.length)];
+              setFruit(random.name);
+            }
+            setTimestamp(new Date().toLocaleString());
+          } catch (err) {
+            console.error(err);
+            alert('Failed to fetch items');
+          } finally {
+            setLoading(false);
+          }
+        };
+        return (
+          <div>
+            <button onClick={loadItems} disabled={loading} className="mt-4 px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg shadow">
+              {loading ? 'Loading...' : 'Load items'}
+            </button>
+            {timestamp && (
+              <p className="mt-4 text-gray-700">{timestamp}</p>
+            )}
+            {fruit && (
+              <p className="mt-2 text-2xl font-bold text-indigo-800">{fruit}</p>
+            )}
+          </div>
+        );
+      }
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<App />);
+    </script>
+  </body>
+</html>
+
+
