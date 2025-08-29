@@ -17,7 +17,6 @@ const pool = new Pool({
 const app = express();
 app.use(cors());
 app.use(express.json());
-
 // Health check
 app.get('/api/health', (_, res) => {
   res.json({ status: 'ok' });
