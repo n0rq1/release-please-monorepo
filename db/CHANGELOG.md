@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/n0rq1/release-please-monorepo/compare/db/v0.1.0...db/v0.1.1) (2025-08-29)
+
+
+### Bug Fixes
+
+* **db:** removed a fruit ([cbf47e8](https://github.com/n0rq1/release-please-monorepo/commit/cbf47e82d5366d48a0afcd560793e52916636d1b))
+
 ## [0.1.0](https://github.com/n0rq1/release-please-monorepo/compare/db-v0.0.1...db/v0.1.0) (2025-08-29)
 
 
