@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/n0rq1/release-please-monorepo/compare/client/v0.2.0...client/v0.2.1) (2025-08-29)
+
+
+### Bug Fixes
+
+* **client:** fdasfas ([f0e8bd2](https://github.com/n0rq1/release-please-monorepo/commit/f0e8bd28fd20a0624893dda5ac05093beb09f131))
+* **client:** linting fix ([21b3459](https://github.com/n0rq1/release-please-monorepo/commit/21b3459bebd6113c453258c0c809fc88611b0f76))
+
 ## [0.2.0](https://github.com/n0rq1/release-please-monorepo/compare/client/v0.1.0...client/v0.2.0) (2025-08-29)
 
 
