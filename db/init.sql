@@ -71,7 +71,6 @@ INSERT INTO items (name) VALUES
 ('rambutan'),
 ('raspberry'),
 ('redcurrant'),
-('salak'),
 ('satsuma'),
 ('serviceberry'),
 ('starfruit'),
