@@ -103,5 +103,4 @@ INSERT INTO items (name) VALUES
 ('lucuma'),
 ('mabolo'),
 ('miracle fruit'),
-('nance'),
 ('surinam cherry');
